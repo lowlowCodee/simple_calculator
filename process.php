@@ -2,8 +2,8 @@
 session_start(); 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $num1 = (float) $_POST['number1'];
-    $num2 = (float) $_POST['number2'];
+    $num1 = $_POST['number1'];
+    $num2 = $_POST['number2'];
     $operation = $_POST['operation'];
     $result = '';
 
